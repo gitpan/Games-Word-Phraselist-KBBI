@@ -2,7 +2,7 @@ NAME
     Games::Word::Phraselist - Manage a list of phrases
 
 VERSION
-    This document describes version 0.02 of Games::Word::Phraselist (from
+    This document describes version 0.03 of Games::Word::Phraselist (from
     Perl distribution Games-Word-Phraselist-KBBI), released on 2014-08-10.
 
 METHODS
@@ -11,6 +11,7 @@ METHODS
   random_phrase() => str
   each_phrase
   phrases_like($regex) => list
+  is_phrase($str) => bool
 HOMEPAGE
     Please visit the project's homepage at
     <https://metacpan.org/release/Games-Word-Phraselist-KBBI>.

@@ -1,13 +1,14 @@
 package Games::Word::Phraselist;
 
 our $DATE = '2014-08-10'; # DATE
-our $VERSION = '0.02'; # VERSION
+our $VERSION = '0.03'; # VERSION
 
 use 5.010001;
 use parent qw(Games::Word::Wordlist);
 
 sub phrases       { my $self = shift; $self->words(@_) }
 sub random_phrase { my $self = shift; $self->random_word(@_) }
+sub is_phrase     { my $self = shift; $self->is_word(@_) }
 sub each_phrase   { my $self = shift; $self->each_word(@_) }
 sub phrases_like  { my $self = shift; $self->words_like(@_) }
 
@@ -26,7 +27,7 @@ Games::Word::Phraselist - Manage a list of phrases
 
 =head1 VERSION
 
-This document describes version 0.02 of Games::Word::Phraselist (from Perl distribution Games-Word-Phraselist-KBBI), released on 2014-08-10.
+This document describes version 0.03 of Games::Word::Phraselist (from Perl distribution Games-Word-Phraselist-KBBI), released on 2014-08-10.
 
 =head1 METHODS
 
@@ -39,6 +40,8 @@ This document describes version 0.02 of Games::Word::Phraselist (from Perl distr
 =head2 each_phrase
 
 =head2 phrases_like($regex) => list
+
+=head2 is_phrase($str) => bool
 
 =head1 HOMEPAGE
 
